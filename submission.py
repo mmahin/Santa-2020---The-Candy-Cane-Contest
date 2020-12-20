@@ -27,7 +27,7 @@ def get_next_bandit():
 
 def multi_armed_probabilities(observation, configuration):
     global total_reward, bandit_dict
-
+    print(dir(observation))
     my_pull = random.randrange(configuration['banditCount'])
     if 0 == observation['step']:
         set_seed()
